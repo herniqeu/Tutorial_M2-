@@ -25,6 +25,7 @@ const express = require('express');
         res.statusCode = 200;
         res.setHeader('Access-Control-Allow-Origin', '*'); 
         var db = new sqlite3.Database(DBPATH); // Abre o banco
+        //teste de git
         var sql = 'SELECT * FROM experiencia';
         db.all(sql, [],  (err, rows ) => {
             if (err) {

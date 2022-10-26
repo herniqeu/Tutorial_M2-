@@ -11,7 +11,7 @@ const express = require('express');
         res.statusCode = 200;
         res.setHeader('Access-Control-Allow-Origin', '*'); 
         var db = new sqlite3.Database(DBPATH); // Abre o banco
-        console.log(db)
+        //console.log(db)
         var sql = 'SELECT * FROM dados_pessoais';
         db.all(sql, [],  (err, rows ) => {
             if (err) {
@@ -25,7 +25,6 @@ const express = require('express');
         res.statusCode = 200;
         res.setHeader('Access-Control-Allow-Origin', '*'); 
         var db = new sqlite3.Database(DBPATH); // Abre o banco
-        console.log(db)
         var sql = 'SELECT * FROM experiencia';
         db.all(sql, [],  (err, rows ) => {
             if (err) {

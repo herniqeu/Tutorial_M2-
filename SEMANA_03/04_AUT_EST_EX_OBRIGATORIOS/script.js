@@ -11,8 +11,8 @@ function hmax(velocidade,gravidade){
 function tempoevelocidade(){
         velocidade = parseFloat(document.getElementById('velocidade').value)
 
-        document.getElementById("tempo").innerHTML = "O tempo é: " + tempo(velocidade,10) 
-        document.getElementById("alturamaxima").innerHTML = "A altura máxima é: " + hmax(velocidade,10)
+        document.getElementById("tempo").innerHTML = "O tempo é: " + tempo(velocidade,10) + "s"
+        document.getElementById("alturamaxima").innerHTML = "A altura máxima é: " + hmax(velocidade,10) + "m"
 }
 
 function delta(a,b,c){
@@ -47,12 +47,12 @@ function CelsiusFahrenheit(celsius){
     
 function celsiusf(){
         temperatura = parseFloat(document.getElementById('fname1').value)
-        document.getElementById("temperaturafinal").innerHTML = CelsiusFahrenheit(temperatura)
+        document.getElementById("temperaturafinal").innerHTML = CelsiusFahrenheit(temperatura) + "Fahrenheits"
 }
     
 function fahrenheitc(){
         temperatura = parseFloat(document.getElementById('temperatura').value)
-        document.getElementById("temperaturafinal").innerHTML = FahrenheitCelsius(temperatura)
+        document.getElementById("temperaturafinal").innerHTML = FahrenheitCelsius(temperatura) + "Celsius"
 }
 
 function Kwh(){
@@ -68,6 +68,6 @@ function Kwh(){
         else{
             var valor = ((quantidadeKwh * precoKwh))
         }
-        document.getElementById("valorKwh").innerHTML = "O valor é :" + valor
+        document.getElementById("valorKwh").innerHTML = "O valor é :" + valor + "reais"
 }
     

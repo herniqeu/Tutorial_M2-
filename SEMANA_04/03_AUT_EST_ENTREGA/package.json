@@ -1,0 +1,15 @@
+{
+  "name": "03_aut_est_entrega",
+  "version": "1.0.0",
+  "description": "Atualize seu projeto individual do currículo profissional incluindo css (preferencialmente, incluindo Bootstrap)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sqlite3": "^5.1.2"
+  }
+}

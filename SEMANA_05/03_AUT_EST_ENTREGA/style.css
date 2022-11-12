@@ -1,8 +1,3 @@
-body {
-    background-color: #FFE4B5	;
-}
-
-
 .main1 {
     text-align: center;
 }
@@ -10,3 +5,34 @@ body {
 .main2 {
     text-align: center;
 }
+
+img {   
+    max-width: 100%;   
+    height: auto;  
+} 
+
+@media screen and (max-width: 1300px) {
+	.main{ 
+	   width: 100%;
+	   background-color:rgb(177, 168, 255);
+       height: auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.main{ 
+	   width: 100%;
+	   background-color:rgb(125, 233, 243);
+       height: auto;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.main{ 
+	   width: 100%;
+	   background-color:rgb(238, 246, 166);
+       height: auto;
+	}
+}
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function azulejo(){
+            alturaParede = parseFloat(document.getElementById("alturaparede").value) * 100
+            alturaAzulejo = parseFloat(document.getElementById("alturaazulejo").value)
+
+            larguraParede = parseFloat(document.getElementById("larguraparede").value) * 100
+            larguraAzulejo = parseFloat(document.getElementById("larguraazulejo").value)
+
+            totalLargura = Math.ceil(larguraParede / larguraAzulejo) 
+            totalAltura = Math.ceil(alturaParede / alturaAzulejo)
+
+            total = (totalLargura * totalAltura)*1.05;
+
+            document.getElementById("resultado1").innerHTML = total + "";
+        }
+
+    </script> 
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+
+    <label for="fname">Altura azulejo:</label><br>
+    <input type="text" id="alturaazulejo" name="fname"><br>
+
+    <label for="fname">Largura azulejo:</label><br>
+    <input type="text" id="larguraazulejo" name="fname"><br>
+
+    <label for="fname">Altura parede:</label><br>
+    <input type="text" id="alturaparede" name="fname"><br>
+
+    <label for="fname">Comprimento parede:</label><br>
+    <input type="text" id="larguraparede" name="fname"><br>
+
+    <button onclick="azulejo()">Click me</button>
+
+    <p id="resultado1"></p>
+
+</head>
+<body>
+    
+</body>
+</html>

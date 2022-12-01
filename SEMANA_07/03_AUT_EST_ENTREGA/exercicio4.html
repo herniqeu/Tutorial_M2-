@@ -1,23 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-        function azulejo(){
-            alturaParede = parseFloat(document.getElementById("alturaparede").value) * 100
-            alturaAzulejo = parseFloat(document.getElementById("alturaazulejo").value)
-
-            larguraParede = parseFloat(document.getElementById("larguraparede").value) * 100
-            larguraAzulejo = parseFloat(document.getElementById("larguraazulejo").value)
-
-            totalLargura = Math.ceil(larguraParede / larguraAzulejo) 
-            totalAltura = Math.ceil(alturaParede / alturaAzulejo)
-
-            total = (totalLargura * totalAltura)*1.05;
-
-            document.getElementById("resultado1").innerHTML = total + "";
-        }
-
-    </script> 
+    <script src="script.js"></script> 
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

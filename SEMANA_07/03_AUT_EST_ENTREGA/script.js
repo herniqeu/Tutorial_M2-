@@ -1,27 +1,41 @@
+// function tabuada(){
+//     let x = parseInt(document.getElementById("tabuada1").value);
+//     let y = parseInt(document.getElementById("tabuada2").value);
+//     let z = parseInt(document.getElementById("tabuada3").value);
+
+//     let tabuada = []
+    
+//     for (let i = 1; i <= 10; i++){
+//         for (let j = 1; j <= 10; j++){
+//             tabuada.push(i + "X" + j)
+//         }
+//     }
+//     let comeca = (x-1)*10+y-1;
+//     let termina = (x-1)*10+z-1;
+//     let final = "";
+
+//     for (let i = comeca; i <= termina; i++){
+//         final += tabuada[i] + " , ";
+//     }
+
+//     document.getElementById("tabuadamostrar").innerHTML = final;
+
+//     // :)
+// }
+
 function tabuada(){
     let x = parseInt(document.getElementById("tabuada1").value);
     let y = parseInt(document.getElementById("tabuada2").value);
     let z = parseInt(document.getElementById("tabuada3").value);
 
-    let tabuada = []
+    let sTabuada = "";
+
+    for (let i = y; i <= z; i++){
+        sTabuada += i + " X " + x + " = " + i*x + "<br>";
+    }
     
-    for (let i = 1; i <= 10; i++){
-        for (let j = 1; j <= 10; j++){
-            tabuada.push(i + "X" + j)
-        }
-    }
+    document.getElementById("tabuadamostrar").innerHTML = sTabuada;
 
-    let comeca = (x-1)*10+y-1;
-    let termina = (x-1)*10+z-1;
-    let final = "";
-
-    for (let i = comeca; i <= termina; i++){
-        final += tabuada[i] + " , ";
-    }
-
-    document.getElementById("tabuadamostrar").innerHTML = final;
-
-    // :)
 }
 //------------------------------------------------------------
 function palindromo(){

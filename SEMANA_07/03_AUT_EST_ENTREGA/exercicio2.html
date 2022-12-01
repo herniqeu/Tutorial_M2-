@@ -1,33 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-        function palindromo(){
-            let numero = document.getElementById("numero").value;
-            let boleano = true;
+    <script src="script.js"></script> 
 
-            tamanhoString = (numero.length-1)
-            tamanhoString1 = Math.ceil(numero.length/2)
-
-            for (let i = 0; i < tamanhoString1; i++){
-                if (numero[i] != numero[tamanhoString-i]){
-                    boleano = false;
-                    break;
-                }
-            }
-
-            if (boleano == true){
-                final = "é palíndromo :)";
-            }
-            else{
-                final = "não é palíndromo";
-            }
-
-            document.getElementById("resultado1").innerHTML = "O número " + final;
-
-        }
-
-    </script> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

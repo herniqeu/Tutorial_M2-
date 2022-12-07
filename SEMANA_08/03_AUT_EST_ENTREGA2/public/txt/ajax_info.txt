@@ -1,0 +1,7 @@
+-Estudante Ciência da Computação no Instituto de Tecnologia e Liderança <br>
+-Interesse e experiencia em Blockchain, participação do projeto da Kindelia Blockchain <br>
+-Interesse em Machine Learning <br>
+-Conhecimento em programação funcional e provas de verificação formal, Haskell e Kind2 <br>
+-Interesse e experiência de Programação Competitiva (C++) <br>
+-Interesse em Rust <br>
+-Experiência em Git <br>

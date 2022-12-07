@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width" />
+    <title>CRUD</title>
+  </head>
+  <h1>Atualização de Usuário</h1>
+
+    <form name="form1" method="post" action="/atualizaUsuario">
+
+
+        cargo: <input type="text" id="cargo" name="cargo"  value=""><br>
+        nome_da_empresa: <input type="text" id="nome_da_empresa" name="nome_da_empresa" size="50" value=""><br>
+        
+        <input type="submit" value="ATUALIZAR">  
+    </form>    
+
+    <script>
+        let url = new URL(window.location.href);
+        let params = url.searchParams;
+        url = '/atualizaUsuario?nome_da_empresa='+url.searchParams.get("nome_da_empresa");
+
+        fetch(url)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            let x = data;
+
+            x.map(function(usuarios) {
+                document.getElementById('nome_da_empresa').value = experiencia.nome_da_empresa;
+                document.getElementById('cargo').value = experiencia.cargo;
+                document.getElementById('resumo').value = experiencia.resumo;
+            });
+            alert(response.json());
+        })
+        .catch(function(error) {
+            console.log(error);
+        });
+    </script>
+</body>
+</html>

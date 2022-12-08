@@ -6,7 +6,7 @@ const sqlite3 = require('sqlite3').verbose();
 const DBPATH = '../data/database.db';
 
 const hostname = '127.0.0.1';
-const port = 5002;
+const port = 5001;
 const app = express();
 
 /* Colocar toda a parte estática no frontend */

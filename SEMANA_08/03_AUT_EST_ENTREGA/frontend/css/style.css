@@ -9,6 +9,7 @@
 img {   
     max-width: 100%;   
     height: auto;  
+	border-radius: 50%;
 } 
 
 @media screen and (max-width: 5000px) {
@@ -76,6 +77,12 @@ img {
 
 #container {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#crud {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
